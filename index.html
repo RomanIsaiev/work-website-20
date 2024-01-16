@@ -20,35 +20,32 @@
     <header class="header">
       <div class="container">
         <nav>
-          <a href="./index.html"
-            ><svg class="header-logo" width="171" height="120">
-              <use
-                class="header-logo-icon"
-                href="./src/images/sprite-svg.svg#icon-logo"
-              ></use></svg
-          ></a>
-          <button
-            class="menu-btn js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu-container"
-          >
-            <svg
-              class="mobile-menu-icon"
-              width="43"
-              height="25"
-              aria-label="Switch menus"
+          <div class="logo-menu-container">
+            <a href="./index.html"
+              ><svg class="header-logo" width="171" height="120">
+                <use
+                  class="header-logo-icon"
+                  href="./src/images/sprite-svg.svg#icon-logo"
+                ></use></svg
+            ></a>
+            <button
+              class="menu-btn js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu-container"
             >
-              <use
-                class="icon-menu"
-                href="./images/icons.svg#icon-hamburger"
-              ></use>
-            </svg>
-          </button>
-
+              <svg
+                class="mobile-menu-icon"
+                width="43"
+                height="25"
+                aria-label="Switch menus"
+              >
+                <use href="./src/images/sprite-svg.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </div>
           <!-- navigation -->
-
-          <div>
+          <div class="navigation">
             <ul class="nav-list list">
               <li class="list-item"><a href="">про мене</a></li>
               <li class="list-item"><a href="">Для кого</a></li>
@@ -57,32 +54,26 @@
               <li class="list-item"><a href="">спікери</a></li>
               <li class="list-item"><a href="">FAQ</a></li>
             </ul>
-
             <button class="header-buy-button" type="button">
               Хочу на курс
             </button>
           </div>
         </nav>
+        <h1 class="hero-title">Не бійся діяти — <span>лети!</span></h1>
+        <p class="hero-text">розпочни шлях розвитку свого особистого бренду</p>
       </div>
     </header>
     <main>
       <section class="section-one">
         <div class="container">
-          <h1 class="hero-title">Не бійся діяти — <span>лети!</span></h1>
-          <p class="hero-text">
-            розпочни шлях розвитку свого особистого бренду
-          </p>
-        </div>
-      </section>
-      <section class="section-two">
-        <div class="container">
-          <h2 class="sect-two-title">
+          <h2 class="sect-one-title">
             Чому я маю право говорити про особистий бренд?
           </h2>
           <p class="text-about-me">
-            Я - Аліна Харечко, мені 40 ❤️ і я майже 20 років в маркетингу!
+            Я - Аліна Харечко, мені 40 &#10084;<br />
+            і я майже 20 років в маркетингу!
           </p>
-          <ul class="sect-two-list">
+          <ul class="sect-one-list list">
             <li class="list-item">
               В 21 рік у Донецьку я відкриваю своє агентство, клієнтами якого
               були Coca - Cola, Proctor, Unilever, Укрсіббанк, Adidas, винний
@@ -119,11 +110,14 @@
           </p>
         </div>
       </section>
-      <section class="section-three">
+      <section class="section-two">
         <div class="container">
-          <h2 class="sect-three-title">Цей курс для тебе, якщо ти...</h2>
-          <ul class="sect-three-list">
+          <h2 class="sect-two-title">Цей курс для тебе, якщо ти...</h2>
+          <ul class="sect-two-list list">
             <li class="list-item">
+              <svg class="icon-crown">
+                <use href="./src/images/sprite-svg.svg#icon-crown"></use>
+              </svg>
               <h3 class="item-title">Експерт</h3>
               <p class="item-text">
                 який бажає монетизувати ще більше блог і масштабувати свій
@@ -132,6 +126,13 @@
               </p>
             </li>
             <li class="list-item">
+              <img
+                class="icon-rocket"
+                src="./src/images/svg/rocket.svg"
+                alt="rocket"
+                width="97"
+                height="141"
+              />
               <h3 class="item-title">новачок</h3>
               <p class="item-text">
                 Новачок, в якого немає багато підписників в блозі і немає
@@ -139,6 +140,9 @@
               </p>
             </li>
             <li class="list-item">
+              <svg class="icon-lamp">
+                <use href="./src/images/sprite-svg.svg#icon-lamp"></use>
+              </svg>
               <h3 class="item-title">підприємець</h3>
               <p class="item-text">
                 ціль якого через посилення особистого бренду збільшити продажі в
@@ -146,6 +150,9 @@
               </p>
             </li>
             <li class="list-item">
+              <svg class="icon-star">
+                <use href="./src/images/sprite-svg.svg#icon-star"></use>
+              </svg>
               <h3 class="item-title">Блогер</h3>
               <p class="item-text">
                 ти знаєш як зібрати та утримувати аудиторію, але тобі потрібно
@@ -155,32 +162,37 @@
           </ul>
         </div>
       </section>
-      <section class="section-four">
+      <section class="section-three">
         <div class="container">
           <div>
             <div>
-              <p>Онлайн курс</p>
-              <h2 class="sect-four-title">
+              <p class="online-text">Онлайн курс</p>
+              <h2 class="sect-three-title">
                 Розправ крила По особистому бренду
               </h2>
             </div>
             <div>
-              <ul class="sect-four-list">
+              <ul class="sect-three-list list">
                 <li class="list-item">17 лютого</li>
                 <li class="list-item">8 тижнів</li>
               </ul>
-              <button class="" type="button">Детальніше</button>
+              <a class="more-button link" href="">Детальніше</a>
             </div>
             <p class="text-format">
               Формат: груповий з вебінарами та груповим чатом
             </p>
+            <img
+              class="triagle-decoration"
+              src="./src/images/sect-three-triangle.svg"
+              alt=""
+            />
           </div>
         </div>
       </section>
-      <section class="section-five">
+      <section class="section-four">
         <div class="container">
           <div class="modules-container">
-            <ul class="modules-list">
+            <ul class="modules-list list">
               <li class="list-item">
                 <h3 class="item-title">Модуль 1. INTRO</h3>
                 <ul class="module-points-list">
@@ -204,6 +216,7 @@
                   <li class="list-item">Як побороти страх публічності?</li>
                 </ul>
               </li>
+              <li class="item-decoration"></li>
               <li class="list-item">
                 <h3 class="item-title">Модуль 2. ДНК</h3>
                 <ul class="module-points-list">
@@ -216,6 +229,7 @@
                   </li>
                 </ul>
               </li>
+              <li class="item-decoration"></li>
               <li class="list-item">
                 <h3 class="item-title">Модуль 3. Продукт</h3>
                 <ul class="module-points-list">
@@ -231,6 +245,7 @@
                   </li>
                 </ul>
               </li>
+              <li class="item-decoration"></li>
               <li class="list-item">
                 <h3 class="item-title">Модуль 4. Маркетинг</h3>
                 <ul class="module-points-list">
@@ -261,6 +276,7 @@
                   </li>
                 </ul>
               </li>
+              <li class="item-decoration"></li>
               <li class="list-item">
                 <h3 class="item-title">Модуль 5. Продаж</h3>
                 <ul class="module-points-list">
@@ -285,7 +301,7 @@
           </div>
           <div class="study-container">
             <h2 class="study-title">ЯК ПРОХОДИТЬ НАВЧАННЯ:</h2>
-            <ul class="study-list">
+            <ul class="study-list list">
               <li class="list-item">відео-лекціі в запису</li>
               <li class="list-item">домашні завдання після кожного модулю</li>
               <li class="list-item">
@@ -295,22 +311,58 @@
                 Закритий телеграм канал для спілкування та обміну досвідом
               </li>
             </ul>
-            <div class="wrapper"><h3 class="wrapper-title">Тарифи</h3></div>
+            <div class="wrapper">
+              <h3 class="wrapper-title">Тарифи</h3>
+              <div>
+                <p class="price-up-text">Ціна до 10 грудня (Early Bird)</p>
+                <ul class="price-list list">
+                  <li class="list-item">
+                    <p class="price-number">15 000 грн</p>
+                    <p class="price-conditions">
+                      при оплаті модуля одним платежем
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <p class="price-number">8 400 грн/міс.</p>
+                    <p class="price-conditions">при оплаті модуля помісячно</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="price-up-text">Ціна до 29 грудня</p>
+                <ul class="price-list list">
+                  <li class="list-item">
+                    <p class="price-number">24 000 грн</p>
+                    <p class="price-conditions">
+                      при оплаті модуля одним платежем
+                    </p>
+                  </li>
+                  <li class="list-item">
+                    <p class="price-number">12 500 грн/міс.</p>
+                    <p class="price-conditions">при оплаті модуля помісячно</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <button class="" type="button">записатись на курс</button>
+          <button class="sect-four-button" type="button">
+            записатись на курс
+          </button>
         </div>
       </section>
-      <section class="section-six">
+      <section class="section-five">
         <div class="container">
           <div class="course-container-one">
-            <p>Онлайн курс</p>
-            <h3>Сторіз, як серіал, який чекають</h3>
-            <ul class="course-container-list">
-              <li class="list-item">скоро...</li>
-              <li class="list-item">8 тижнів</li>
-            </ul>
-            <a class="link" href="">Детальніше</a>
-            <p>Формат: груповий з вебінарами та груповим чатом</p>
+            <div class="inner-container">
+              <p class="online">Онлайн курс</p>
+              <h3>Сторіз, як серіал, який чекають</h3>
+              <ul class="course-container-list">
+                <li class="list-item">скоро...</li>
+                <li class="list-item">8 тижнів</li>
+              </ul>
+              <a class="link" href="">Детальніше</a>
+              <p>Формат: груповий з вебінарами та груповим чатом</p>
+            </div>
           </div>
           <div class="course-container-two">
             <p>Онлайн курс</p>
@@ -323,9 +375,9 @@
           </div>
         </div>
       </section>
-      <section class="section-seven">
+      <section class="section-six">
         <div class="container">
-          <h2 class="sect-seven-title">Я за руку проведу тебе до твоєї мрії</h2>
+          <h2 class="sect-six-title">Я за руку проведу тебе до твоєї мрії</h2>
           <p>навчу та допоможу тобі перестати боятись та йти вперед до себе</p>
           <picture>
             <source
@@ -347,7 +399,7 @@
               height="280"
             />
             <img
-              class="sext-seven-author"
+              class="sext-six-author"
               src="./images/"
               alt="author"
               width="100%"
@@ -361,15 +413,44 @@
           </p>
         </div>
       </section>
-      <section class="section-eight">
+      <section class="section-seven">
         <div class="container">
-          <h2 class="sect-eight-title">Відгуки</h2>
+          <h2 class="sect-seven-title">Відгуки</h2>
         </div>
       </section>
       <section class="section-ten">
         <div class="container"><h2 class="sect-ten-title">FAQ</h2></div>
       </section>
     </main>
+    <footer></footer>
+    <!--------------------MOBILE-MENU------------------->
+    <div class="menu-container js-menu-container" id="mobile-menu-container">
+      <div class="mobile-menu">
+        <button class="close-button-menu js-close-menu">
+          <svg class="icon-close" height="8" width="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <a href="./index.html"
+          ><svg class="header-logo" width="171" height="120">
+            <use
+              class="header-logo-icon"
+              href="./src/images/sprite-svg.svg#icon-logo"
+            ></use></svg
+        ></a>
+        <div>
+          <ul class="nav-list list">
+            <li class="list-item"><a href="">про мене</a></li>
+            <li class="list-item"><a href="">Для кого</a></li>
+            <li class="list-item"><a href="">Курси</a></li>
+            <li class="list-item"><a href="">Відгуки</a></li>
+            <li class="list-item"><a href="">спікери</a></li>
+            <li class="list-item"><a href="">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--------------------MOBILE-MENU-END------------------->
   </body>
   <script type="module" src="./src/js/mobile-menu.js"></script>
 </html>
