@@ -1,5 +1,4 @@
-// import Swiper from "swiper/bundle";
-import Swiper from "swiper-bundle";
+import Swiper from "swiper/bundle";
 
 import "swiper/css/bundle";
 import "swiper/css/navigation";
