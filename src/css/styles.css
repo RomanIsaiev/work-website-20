@@ -212,10 +212,16 @@ p {
 /* section-one */
 
 .section-one {
+  position: relative;
+
   padding-top: 51px;
   padding-bottom: 97px;
 
   background: var(--pink-bg);
+
+  background-image: url(../images/black-heart-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: top 883px right 0;
 }
 
 .sect-one-title {
@@ -771,6 +777,17 @@ p {
   background: #f5f5f5;
 }
 
+.section-six .container {
+  padding-left: 0;
+  padding-right: 0;
+
+  background-image: url(../images/black-heart-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: top 280px right 0;
+
+  background-size: 137px 140px;
+}
+
 .sect-six-title {
   color: #191919;
   font-family: Unbounded;
@@ -900,8 +917,16 @@ p {
 
 .section-seven {
   background: #ff87b8;
-  padding-top: 44px;
+  padding-top: 20px;
   padding-bottom: 43px;
+}
+
+.section-seven .container {
+  background-image: url(../images/stars-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 17px;
+
+  background-size: 160px 87px;
 }
 
 .sect-seven-title {
@@ -913,6 +938,8 @@ p {
   line-height: 100%; /* 30px */
 
   margin-bottom: 63px;
+
+  padding-top: 22px;
 }
 
 .reviews-container {
