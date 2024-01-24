@@ -18,6 +18,17 @@ const swiper = new Swiper(".mySwiper", {
     delay: 5000,
     pauseOnMouseEnter: true,
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 100,
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 100,
+    },
+  },
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
@@ -33,5 +44,16 @@ const swiper2 = new Swiper(".mySwiper2", {
   autoplay: {
     delay: 5000,
     pauseOnMouseEnter: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 100,
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 100,
+    },
   },
 });
