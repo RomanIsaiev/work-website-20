@@ -1407,7 +1407,7 @@ p {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .section-add .container {
+  .section-add {
     background-image: url(../images/black-heart-mobile-2x.png),
       url(../images/sect-six-author-mobile-2x.png);
   }
