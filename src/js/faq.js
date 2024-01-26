@@ -6,10 +6,8 @@ $(".question").click(function () {
   $(this).find(".question-plus").css("transform", "rotate(0)"); //поворот стрелки
   if ($(this).hasClass("open")) {
     $(this).removeClass("open");
-    closeOpenText.forEach((item) => (item.textContent = "Відкрити опис"));
   } else {
     $(this).addClass("open");
-    closeOpenText.forEach((item) => (item.textContent = "Закрити опис"));
     $(this).find(".question-plus").css("transform", "rotate(45deg)"); //поворот стрелки
   }
 });

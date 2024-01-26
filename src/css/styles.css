@@ -42,6 +42,20 @@ p {
   max-width: 375px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 1280px) {
   .container {
     padding-left: 50px;
@@ -439,6 +453,7 @@ p {
 
 .sect-one-list .list-item span {
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .text-now {
@@ -1112,6 +1127,8 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 15.6px */
+
+  max-width: 140px;
 }
 
 .sect-four-button {
@@ -1191,9 +1208,9 @@ p {
 }
 
 .course-container-one {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 
   padding: 30px 15px;
 
@@ -1282,9 +1299,9 @@ p {
 }
 
 .course-container-two {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 
   padding: 30px 15px;
 
@@ -1324,7 +1341,19 @@ p {
     margin-right: auto;
   }
 
-  .inner-container {
+  .course-container-one .inner-container {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .course-container-two .inner-container {
     position: relative;
 
     display: flex;
@@ -1353,7 +1382,17 @@ p {
     width: 100%;
   }
 
-  .course-container-list {
+  .course-container-one .course-container-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    padding-right: 180px;
+
+    margin-bottom: 0;
+  }
+
+  .course-container-two .course-container-list {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -1512,12 +1551,11 @@ p {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-add {
-      background-image: url(../images/black-heart-tablet-2x.png),
-        url(../images/sect-six-author-tablet-2x.pngsect-six-author-tablet-1x.png);
+      background-image: url(../images/black-heart-tablet-2x.png);
     }
 
     .section-add .container {
-      background-image: url(../images/sect-six-author-tablet-2x.pngsect-six-author-tablet-1x.png);
+      background-image: url(../images/sect-six-author-tablet-2x.png);
     }
   }
 
@@ -1811,6 +1849,7 @@ p {
   position: relative;
 
   max-width: 345px;
+  width: 100%;
 
   margin-left: auto;
   margin-right: auto;
@@ -1869,9 +1908,15 @@ p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
+
+    height: 500px;
   }
 
   .faq {
+    max-width: 777px;
+    width: 100%;
+
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -1880,6 +1925,7 @@ p {
     position: relative;
 
     max-width: 777px;
+    width: 100%;
 
     margin-left: auto;
     margin-right: auto;
