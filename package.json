@@ -12,6 +12,7 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "jquery": "^3.7.1",
     "swiper": "^11.0.5",
     "vanilla-back-to-top": "^7.2.1"
