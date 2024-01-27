@@ -10,11 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oranienbaum&family=Unbounded:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -73,7 +70,7 @@
             </button>
           </div>
         </nav>
-        <h1 class="hero-title animate__animated animate__fadeInLeft">
+        <h1 class="hero-title" data-aos="fade-right">
           Не бійся діяти — <span>лети!</span>
         </h1>
         <p class="hero-text">розпочни шлях розвитку свого особистого бренду</p>
@@ -83,7 +80,7 @@
       <section class="section-one" id="about-me">
         <div class="container">
           <div>
-            <h2 class="sect-one-title animate__animated animate__fadeInLeft">
+            <h2 class="sect-one-title" data-aos="fade-right">
               Чому я маю право говорити про особистий бренд?
             </h2>
             <p class="text-about-me">
@@ -134,7 +131,7 @@
         <div class="container">
           <h2 class="sect-two-title">Цей курс для тебе, якщо ти...</h2>
           <ul class="sect-two-list list">
-            <li class="list-item animate__animated animate__fadeInLeft">
+            <li class="list-item" data-aos="fade-right">
               <svg class="icon-crown">
                 <use href="./src/images/sprite-svg.svg#icon-crown"></use>
               </svg>
@@ -145,7 +142,7 @@
                 лінійку продуктів, вирости в блозі в охопленнях і в грошах
               </p>
             </li>
-            <li class="list-item animate__animated animate__fadeInLeft">
+            <li class="list-item" data-aos="fade-right">
               <img
                 class="icon-rocket"
                 src="./src/images/svg/rocket.svg"
@@ -159,7 +156,7 @@
                 розуміння, який продукт продавати
               </p>
             </li>
-            <li class="list-item animate__animated animate__fadeInLeft">
+            <li class="list-item" data-aos="fade-right">
               <svg class="icon-lamp">
                 <use href="./src/images/sprite-svg.svg#icon-lamp"></use>
               </svg>
@@ -169,7 +166,7 @@
                 бізнесі
               </p>
             </li>
-            <li class="list-item animate__animated animate__fadeInLeft">
+            <li class="list-item" data-aos="fade-right">
               <svg class="icon-star">
                 <use href="./src/images/sprite-svg.svg#icon-star"></use>
               </svg>
@@ -479,7 +476,7 @@
       <section class="section-add">
         <div class="container">
           <div class="sect-six-title-container">
-            <h2 class="sect-six-title animate__animated animate__fadeInLeft">
+            <h2 class="sect-six-title" data-aos="fade-right">
               Я за руку проведу тебе до твоєї мрії
             </h2>
             <p class="sect-six-text">
@@ -1127,6 +1124,10 @@
     </div>
     <!--------------------MOBILE-MENU-END------------------->
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script type="module" src="./src/js/jquery-3.7.0.min.js"></script>
   <script type="module" src="./src/js/mobile-menu.js"></script>
   <script type="module" src="./src/js/faq.js"></script>
