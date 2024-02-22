@@ -2035,10 +2035,6 @@ p {
 
 /* footer */
 
-.footer {
-  padding-bottom: 68px;
-}
-
 .social-links-container {
   display: flex;
   justify-content: space-between;
@@ -2047,17 +2043,8 @@ p {
   margin-bottom: 25px;
 }
 
-.footer-logo {
-}
-
-.header-logo {
-}
-
 .header-logo-icon {
   display: block;
-}
-
-.social-links {
 }
 
 .social-links-list {
@@ -2067,13 +2054,12 @@ p {
   align-items: center;
 }
 
-.social-links-list .list-item {
-}
-
 .have-problems-container {
   display: flex;
   justify-content: space-between;
   align-items: end;
+
+  margin-bottom: 60px;
 }
 
 .problems-text {
@@ -2102,10 +2088,6 @@ p {
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-bottom: 55px;
-  }
-
   .footer .container {
     display: flex;
     align-items: center;
@@ -2279,4 +2261,51 @@ p {
 
 .tariff-info {
   text-align: center;
+}
+
+/* under-footer */
+
+.under-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #000;
+}
+
+.deals-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.deals-list .list-item a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.fop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fop-list .list-item {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  text-transform: uppercase;
 }
