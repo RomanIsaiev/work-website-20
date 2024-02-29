@@ -102,12 +102,6 @@ p {
   margin-bottom: 75px;
 }
 
-.header-logo {
-}
-
-.header-logo-icon {
-}
-
 .mobile-menu-icon {
   display: flex;
   align-items: center;
@@ -128,12 +122,6 @@ p {
   display: block;
   border: none;
   background-color: transparent;
-}
-
-.js-open-menu {
-}
-
-.icon-menu {
 }
 
 .navigation {
