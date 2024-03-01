@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const tariffPrice = document.getElementById("tariff-price");
   const tariffPriceMounth = document.getElementById("tariff-price-month");
 
+  const buyButton = document.getElementById("buy-button");
+
   const conditionTextVip = document.getElementById("condition-text-vip");
 
   const condText = document.getElementById("clear-condition-text");
@@ -36,11 +38,15 @@ document.addEventListener("DOMContentLoaded", function () {
       tariffPriceMounth.textContent = "14 000 грн/міс.";
       condText.textContent = " при оплаті модуля помісячно";
       conditionTextVip.textContent = "10% знижки при оплаті одним платежем";
+      buyButton.removeAttribute("data-modal-open-two");
+      buyButton.setAttribute("data-modal-open-one", "");
     } else if (tariff === "vip") {
       tariffPrice.textContent = "80 000 грн"; // Замените на реальную цену для VIP тарифа
       tariffPriceMounth.textContent = "";
       condText.textContent = "";
       conditionTextVip.textContent = "За весь курс при оплаті одним платежем";
+      buyButton.removeAttribute("data-modal-open-one");
+      buyButton.setAttribute("data-modal-open-two", "");
     }
     // } else if (tariff === "standart-two") {
     //   tariffPriceTwo.textContent = "24 000 грн"; // Замените на реальную цену для базового тарифа

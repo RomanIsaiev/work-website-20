@@ -65,9 +65,7 @@
               </li>
               <li class="list-item"><a class="link" href="#faq">FAQ</a></li>
             </ul>
-            <button class="header-buy-button" type="button">
-              Хочу на курс
-            </button>
+            <a class="header-buy-button link" href="#buy"> Хочу на курс </a>
           </div>
         </nav>
         <h1 class="hero-title" data-aos="fade-right">
@@ -189,7 +187,7 @@
                   Розправ крила По особистому бренду
                 </h2>
               </div>
-              <div class="vebinar-banner">
+              <!-- <div class="vebinar-banner">
                 <ul class="sect-three-list list">
                   <li class="list-item">17 лютого</li>
                   <li class="list-item">8 тижнів</li>
@@ -201,11 +199,11 @@
                   href="https://docs.google.com/forms/d/1fIfNEG13lTVz9MjDJlSmrqOEd1S78boclnQgLmZb0ps/viewform?fbclid=PAAabz765nvAppVHu_cpy3lq1zLDX9M0_7iPUOGkToX6bXiNXP6QM8Vt8r73M_aem_AePO4h5owvNW8WnNgR8RA2uJ0ZJZ9i8szU5gESPSi_DCNA5qsPIBOPswgz3mVmWB8Tw&edit_requested=true"
                   >Детальніше</a
                 >
-              </div>
+              </div> -->
             </div>
-            <p class="sect-text-format">
+            <!-- <p class="sect-text-format">
               Формат: груповий з вебінарами та груповим чатом
-            </p>
+            </p> -->
           </div>
           <img
             class="triagle-decoration"
@@ -336,7 +334,7 @@
                 Закритий телеграм канал для спілкування та обміну досвідом
               </li>
             </ul>
-            <div class="wrapper">
+            <div class="wrapper" id="buy">
               <h3 class="wrapper-title">Тарифи</h3>
               <div>
                 <!-- <p class="price-up-text">Ціна до 10 грудня (Early Bird)</p> -->
@@ -418,7 +416,12 @@
                 </div>
               </div> -->
             </div>
-            <button class="sect-four-button" type="button">
+            <button
+              class="sect-four-button"
+              type="button"
+              id="buy-button"
+              data-modal-open-one
+            >
               записатись на курс
             </button>
           </div>
@@ -974,6 +977,83 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="spiker-card">
+                  <div class="spiker-info">
+                    <div class="spiker-image-container">
+                      <picture>
+                        <source
+                          srcset=""
+                          media="(min-width: 1158px)"
+                          width="360"
+                          height="300"
+                        />
+                        <source
+                          srcset="
+                            ./src/images/spikers-img/spiker-seven-mobile-1x.png 1x,
+                            ./src/images/spikers-img/spiker-seven-mobile-2x.png 2x
+                          "
+                          media="(min-width: 1680px)"
+                          width="200"
+                          height="200"
+                        />
+                        <source
+                          srcset="
+                            ./src/images/spikers-img/spiker-seven-mobile-1x.png 1x,
+                            ./src/images/spikers-img/spiker-seven-mobile-2x.png 2x
+                          "
+                          media="(min-width: 1280px)"
+                          width="144"
+                          height="144"
+                        />
+                        <img
+                          class="spiker-img"
+                          src="./src/images/spikers-img/spiker-seven-mobile-1x.png"
+                          alt="spiker"
+                          width="122"
+                          height="122"
+                        />
+                      </picture>
+                    </div>
+                    <div class="spiker-name-container">
+                      <h3 class="spiker-name">Альона Сак</h3>
+                      <p class="spiker-role">Методолог EdTech</p>
+                      <a
+                        class="spiker-link"
+                        href="https://www.instagram.com/alyona_sak"
+                        target="_blank"
+                        rel="nofollow"
+                        >instagram</a
+                      >
+                    </div>
+                  </div>
+                  <div class="about-spiker">
+                    <div class="about-spiker">
+                      <p class="about-spiker-one">
+                        Допомагає створити ефективні навчання, які проходитимуть
+                        до кінця та рекомендуватимуть. За перші 9 міс ведення
+                        блогу провела більше 250 год консультацій. А також,
+                        допомогла 25 експертам створити свої навчальні продукти.
+                      </p>
+
+                      <p class="about-spiker-two">Методолог, яка:</p>
+                      <ul class="about-siker-list about-spiker-one">
+                        <li class="list-item">
+                          має 10 років викладання різним віковим групам
+                          індивідуально і в групах (офлайн/онлайн)
+                        </li>
+                        <li class="list-item">
+                          6 років заробляє виключно з інстаграм на створенні
+                          своїх власних навчальних продуктів
+                        </li>
+                        <li class="list-item">
+                          відноситься до навчального продукту , як до бізнесу
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -1382,6 +1462,34 @@
         </ul>
       </div>
     </footer>
+    <!--standart-->
+    <div class="backdrop is-hidden" data-modal1>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close1>
+          <img
+            src="./src/images/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1709288017"></div>
+      </div>
+    </div>
+    <!-- vip -->
+    <div class="backdrop is-hidden" data-modal2>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close2>
+          <img
+            src="./src/images/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1709288062"></div>
+      </div>
+    </div>
     <!--------------------MOBILE-MENU------------------->
     <div class="menu-container js-menu-container" id="mobile-menu-container">
       <div class="mobile-menu">
@@ -1429,11 +1537,28 @@
   <script>
     AOS.init({ duration: 1000 });
   </script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
   <script type="module" src="./src/js/jquery-3.7.0.min.js"></script>
   <script type="module" src="./src/js/mobile-menu.js"></script>
   <script type="module" src="./src/js/faq.js"></script>
   <script type="module" src="./src/js/swiper.js"></script>
   <script type="module" src="./src/js/priceSwitcher.js"></script>
+  <script type="module" src="./src/js/js-modal.js"></script>
   <script type="module" src="./src/js/scroll.js"></script>
   <script type="module" src="./src/js/backToTop.js"></script>
+  <!-- standart -->
+  <script
+    type="module"
+    src="https://kwiga.com/build/js/kwiga-widget.js?t=1709288017&uuid=334cae76-bf01-4e7d-bab0-6b5c7a202dac&producer=https://kwiga.com/"
+  ></script>
+  <!-- vip -->
+  <script
+    type="module"
+    src="https://kwiga.com/build/js/kwiga-widget.js?t=1709288062&uuid=39b8cf6b-de8a-49ab-b4e4-0b6fe3be64bd&producer=https://kwiga.com/"
+  ></script>
 </html>
