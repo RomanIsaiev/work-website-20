@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 const swiper = new Swiper(".mySwiper", {
-  loop: true,
+  loop: false,
   spaceBetween: 100,
 
   pagination: {
@@ -32,18 +32,11 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
-  loop: true,
-
-  spaceBetween: 100,
+  loop: false,
 
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-
-  autoplay: {
-    delay: 5000,
-    pauseOnMouseEnter: true,
   },
 
   breakpoints: {
@@ -53,7 +46,7 @@ const swiper2 = new Swiper(".mySwiper2", {
     },
     1279: {
       slidesPerView: 3,
-      spaceBetween: 100,
+      spaceBetween: 30,
     },
   },
 });
