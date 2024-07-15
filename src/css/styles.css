@@ -428,8 +428,9 @@ p {
 
 .courses-list {
   display: flex;
-  flex-direction: column;
-  gap: 75px;
+  gap: 65px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   margin-bottom: 125px;
 }
@@ -478,6 +479,11 @@ p {
   margin-bottom: 30px;
 }
 
+.courses-list .item-title span {
+  font-size: 19px;
+  text-transform: lowercase;
+}
+
 .courses-list .course-link {
   display: block;
   color: #191919;
@@ -523,7 +529,7 @@ p {
   .courses-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
   }
 
@@ -547,6 +553,10 @@ p {
   .courses-list .item-title {
     font-size: 33px;
     margin-bottom: 0;
+  }
+
+  .courses-list .item-title span {
+    font-size: 28px;
   }
 
   .courses-list .course-link {
@@ -609,7 +619,7 @@ p {
 .attention-title {
   color: #fd5e9e;
   font-family: Unbounded;
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 24px */
@@ -1277,6 +1287,10 @@ p {
   margin: 40px 0 40px 0;
 }
 
+.modules-list > .list-item.story:last-child:after {
+  display: none;
+}
+
 .modules-list .list-item .item-title {
   color: var(--disc-black-text);
   font-family: Unbounded;
@@ -1310,6 +1324,10 @@ p {
   line-height: 120%; /* 16.8px */
 }
 
+.story-image {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 1280px) {
   .section-four {
     padding-top: 106px;
@@ -1322,7 +1340,7 @@ p {
   }
 
   .modules-list {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .modules-list li {
@@ -1564,10 +1582,15 @@ p {
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 26.4px */
+  line-height: 100%; /* 26.4px */
   text-transform: uppercase;
 
   margin-bottom: 30px;
+}
+
+.course-container-title span {
+  font-size: 19px;
+  text-transform: lowercase;
 }
 
 .course-container-list {
@@ -2299,10 +2322,8 @@ p {
 
 .social-links-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 25px;
+  justify-content: space-between;
 }
 
 .header-logo-icon {
@@ -2350,23 +2371,6 @@ p {
 }
 
 @media screen and (min-width: 1280px) {
-  .footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .social-links-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 200px;
-
-    margin-bottom: 0;
-  }
-
   .have-problems-container {
     display: flex;
     justify-content: space-between;
@@ -2576,8 +2580,6 @@ p {
   text-transform: uppercase;
 }
 
-/* modal  */
-
 /* modal */
 
 .backdrop {
@@ -2596,8 +2598,6 @@ p {
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* overflow-y: scroll; */
 
   z-index: 999;
 }
