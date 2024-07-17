@@ -1415,6 +1415,7 @@ p {
 
 .wrapper-title {
   color: var(--disc-black-text);
+  text-align: center;
   font-family: Unbounded;
   font-size: 22px;
   font-style: normal;
@@ -1422,7 +1423,7 @@ p {
   line-height: 100%; /* 22px */
   text-transform: uppercase;
 
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .price-up-text {
@@ -1438,23 +1439,38 @@ p {
 
 .price-list {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 
   margin-bottom: 30px;
 }
 
-.price-list .list-item .price-number {
-  color: var(--black-text);
-  font-family: Inter;
-  font-size: 16px;
+.price-title {
+  color: #000;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
+  line-height: 100%; /* 20px */
+
+  margin-bottom: 15px;
+}
+
+.price-list .list-item .price-number {
+  color: #e90f5e;
+  font-family: Inter;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
   line-height: 110%; /* 17.6px */
 }
 
 .price-list .list-item .price-conditions {
   color: var(--black-text);
+  text-align: center;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
@@ -1462,6 +1478,7 @@ p {
   line-height: 130%; /* 15.6px */
 
   max-width: 140px;
+  margin: 0 auto;
 }
 
 .sect-four-button {
